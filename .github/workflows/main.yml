@@ -49,10 +49,10 @@ jobs:
          run: aws eks update-kubeconfig --name eks-aula
 
        - name: Deploy dos manifestos no Kubernetes
-       - uses: Azure/k8s-deploy@v5
+         uses: Azure/k8s-deploy@v5
          with:
             manifests: |
-             ./k8s/deployment.yaml
+                ./k8s/deployment.yaml
             images: |
                 cava231/fake-shop:v${{github.run_number}}
         
