@@ -54,5 +54,5 @@ jobs:
             manifests: |
              ./k8s/deployment.yaml
             images: |
-                cava231/fake-shop:v${{github.run_number}}    
+                cava231/fake-shop:v${{github.run_number}}
         
